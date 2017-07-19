@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project 1</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+
+ <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+ <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+
+<script>
+
+function highlight(highlightClass){
+	 $(".asian").css({"opacity": "0.1"});
+	 $(".white").css({"opacity": "0.1"});
+	 $(".indian").css({"opacity": "0.1"});
+	 $(".black").css({"opacity": "0.1"});
+	 $(".hispanic").css({"opacity": "0.1"});
+	 $(highlightClass).css({"opacity": "1.0"});
+}
+
+function highlightAll(){
+	 $(".asian").css({"opacity": "1"});
+	 $(".white").css({"opacity": "1"});
+	 $(".indian").css({"opacity": "1"});
+	 $(".black").css({"opacity": "1"});
+	 $(".hispanic").css({"opacity": "1"});
+ 
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Purdue and Harbin Institute of Technology Data</h1>
+
+<div style="width: 600px; margin: auto;">
+	<img src="img/key.png" alt="key" width="250" style="margin-left: 20px; margin-top: 75px; float: left;">
+	
+    <div style="width: 200px; height: 200px; float: right;">
+		<h2>Ethnicity:</h2>
+		<div id="btnAsian" class="btn">Asian</div>
+		<div id="btnWhite" class="btn">White</div>
+		<div id="btnIndian" class="btn">Indian</div>
+		<div id="btnBlack"  class="btn">Black</div>
+        <div id="btnHispanic"  class="btn">Hispanic</div>
+    </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="550">
+	
+	<text x="20" y="5">190</text>
+	<line x1="50" y1="0" x2="1300" y2="0" style="stroke: #713293;" stroke-width=".5px"/>
+	<text x="20" y="130">180</text>
+	<line x1="50" y1="125" x2="1300" y2="125" style="stroke: #713293;" stroke-width=".5px"/>
+	<text x="20" y="255">170</text>
+	<line x1="50" y1="250" x2="1300" y2="250" style="stroke: #713293;" stroke-width=".5px"/>
+	<text x="20" y="380">160</text>
+	<line x1="50" y1="375" x2="1300" y2="375" style="stroke: #713293;" stroke-width=".5px"/>
+	<text x="20" y="505">150</text>
+	<line x1="50" y1="500" x2="1300" y2="500" style="stroke: #713293;" stroke-width=".5px"/>
+	
+	<text transform="translate(-100,280)rotate(-90)" x="0" y="100">Height (cm)</text>
+	
+	<image id="indiangirl" class="indian" x="250" y="250" xlink:href="img/indian.png" />
+	
+	<image id="blackboy" class="black" x="700" y="250" xlink:href="img/black.png" />
+	<image id="blackboy2" class="black" x="310" y="312" xlink:href="img/black.png" />
+	
+	<image id="red" class="white" x="650" y="240" xlink:href="img/whitefemalecgtred.png" />
+	<image id="brown" class="white" x="720" y="130" xlink:href="img/whitemalecgtbrown.png" />
+	<image id="blonde" class="white" x="402" y="370" xlink:href="img/whitefemalecgtblonde.png" />
+	<image id="brown2" class="white" x="710" y="-30" xlink:href="img/whitemalecgtbrown.png" />
+	<image id="brown3" class="white" x="890" y="250" xlink:href="img/whitemalecgtbrown.png" />
+	<image id="blonde2" class="white" x="490" y="375" xlink:href="img/whitefemalecgtblonde.png" />
+	<image id="brown4" class="white" x="510" y="120" xlink:href="img/whitemalecgtbrown.png" />
+	<image id="brown5" class="white" x="470" y="187" xlink:href="img/whitemalecgtbrown.png" />
+
+	<image id="asian1" class="asian" x="610" y="115" xlink:href="img/asianmalehit.png" />
+	<image id="asian2" class="asian" x="450" y="110" xlink:href="img/asianmalehit.png" />
+
+	<image id="asian3" class="asian" x="150" y="370" xlink:href="img/asianfemalehit.png" />
+	<image id="asian4" class="asian" x="150" y="270" xlink:href="img/asianfemalehit.png" />
+	<image id="asian5" class="asian" x="150" y="272" xlink:href="img/asianfemalehit.png" />
+	<image id="asian6" class="asian" x="210" y="275" xlink:href="img/asianfemalehit.png" />
+	<image id="asian7" class="asian" x="250" y="250" xlink:href="img/asianfemalehit.png" />
+	<image id="asian8" class="asian" x="280" y="250" xlink:href="img/asianfemalehit.png" />
+	<image id="asian9" class="asian" x="110" y="430" xlink:href="img/asianfemalehit.png" />
+	<image id="asian10" class="asian" x="380" y="250" xlink:href="img/asianfemalehit.png" />
+
+	<image id="asian11" class="asian" x="190" y="470" xlink:href="img/asianfemalecgt.png" />
+	<image id="asian12" class="asian" x="180" y="365" xlink:href="img/asianfemalecgt.png" />
+
+	<image id="asian13" class="asian" x="820" y="0" xlink:href="img/asianmalecgt.png" />
+	<image id="asian14" class="asian" x="600" y="200" xlink:href="img/asianmalecgt.png" />
+	<image id="asian15" class="asian" x="820" y="100" xlink:href="img/asianmalecgt.png" />
+
+	<image id="asian16" class="asian" x="180" y="375" xlink:href="img/asianfemalehit.png" />
+	<image id="asian17" class="asian" x="200" y="437" xlink:href="img/asianfemalehit.png" />
+	<image id="asian18" class="asian" x="220" y="312" xlink:href="img/asianfemalehit.png" />
+	<image id="asian19" class="asian" x="200" y="240" xlink:href="img/asianfemalehit.png" />
+	<image id="asian20" class="asian" x="410" y="315" xlink:href="img/asianfemalehit.png" />
+
+	<image id="asian21" class="asian" x="700" y="125" xlink:href="img/asianmalecgt.png" />
+
+	<image id="asian22" class="asian" x="120" y="375" xlink:href="img/asianfemalehit.png" />
+	<image id="asian23" class="asian" x="250" y="370" xlink:href="img/asianfemalehit.png" />
+
+	<image id="hispanic1" class="hispanic" x="350" y="250" xlink:href="img/hispanicmale.png" />
+	<image id="hispanic2" class="hispanic" x="820" y="145" xlink:href="img/hispanicfemale.png" />
+	
+	<text x="60" y="530">50</text>
+	<text x="520" y="530">Weight (kg)</text>
+	<text x="995" y="530">100</text>
+
+</svg>
+
+<script>
+
+$( "#btnAsian" ).mouseover(function(){
+	highlight(".asian");
+});
+$( "#btnAsian" ).mouseout(function(){
+	highlightAll();
+});
+
+$( "#btnWhite" ).mouseover(function(){
+	highlight(".white");
+});
+$( "#btnWhite" ).mouseout(function(){
+	highlightAll();
+});
+
+$( "#btnIndian" ).mouseover(function(){
+	highlight(".indian");
+});
+$( "#btnIndian" ).mouseout(function(){
+	highlightAll();
+});
+
+$( "#btnBlack" ).mouseover(function(){
+	highlight(".black");
+});
+$( "#btnBlack" ).mouseout(function(){
+	highlightAll();
+});
+
+$( "#btnHispanic" ).mouseover(function(){
+	highlight(".hispanic");
+});
+$( "#btnHispanic" ).mouseout(function(){
+	highlightAll();
+});
+
+
+$(function() {
+    $( document ).tooltip({
+   position: { my: "left+15 center", at: "right center" }
+});
+  });
+
+</script>
+
+</body>
+</html>
